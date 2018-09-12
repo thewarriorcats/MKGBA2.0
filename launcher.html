@@ -67,12 +67,23 @@
         <span id="tempMessage"></span>
              <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115293259-1"></script>
-<script>
+
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-115293259-1');
 </script>
+             <script>// set interval
+var tid = setInterval(mycode, 30000);
+function mycode() {
+ga('send', 'event', 'category', 'action', {'nonInteraction': 1});
+}
+function abortTimer() { // to be called when you want to stop the timer
+  clearInterval(tid);
+}
+</script>
+             
     </body>
 </html>
