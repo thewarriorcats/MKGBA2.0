@@ -74,16 +74,18 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-115293259-1');
-</script>
-             <script>// set interval
+<script>// set interval
 var tid = setInterval(mycode, 30000);
 function mycode() {
-ga('send', 'event', 'category', 'action', {'nonInteraction': 1});
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115293259-1');
 }
 function abortTimer() { // to be called when you want to stop the timer
   clearInterval(tid);
 }
 </script>
+
              
     </body>
 </html>
