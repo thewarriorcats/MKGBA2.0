@@ -8,6 +8,12 @@
  
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
+  if ( window.location !== window.parent.location ) {
+    console.log('MKGBA error: Ask for your site to be whitelisted at https://discord.gg/g7qRZW6')
+ alert('MKGBA error: Ask for your site to be whitelisted at https://discord.gg/g7qRZW6');
+    document.body.innerHTML = "<h1>This site is using the MK Games emulator without permission!</h1><p>If you want to continue playing the emulator, go to https://sites.google.com/site/officialmkgames/emulator-games-new  (It will keep your progress)</p><br><br><p>If you are the dev of this site, go to out discord (https://discord.gg/BdbSy8n) and open a ticket. </p>";
+throw error;
+}
 function attachBIOS(BIOS) {
     try {
         Iodine.attachBIOS(new Uint8Array(BIOS));
