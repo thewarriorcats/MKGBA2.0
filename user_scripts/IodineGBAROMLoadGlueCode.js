@@ -10,7 +10,7 @@
  */
 if ( window.location !== window.parent.location ) {
     console.log('MKGBA error: Ask for your site to be whitelisted at https://discord.gg/g7qRZW6')
- alert('MKGBA error: Ask for your site to be whitelisted at https://discord.gg/g7qRZW6');
+ //alert('MKGBA error: Ask for your site to be whitelisted at https://discord.gg/g7qRZW6');
    location.href='https://mkgamesdev.github.io/MKGBA2.0/permission.html ';
 throw error;
 }
