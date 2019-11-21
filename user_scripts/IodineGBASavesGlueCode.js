@@ -8,6 +8,12 @@
  
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
+if ( window.location !== window.parent.location ) {
+    console.log('MKGBA error: Ask for your site to be whitelisted at https://discord.gg/g7qRZW6')
+ alert('MKGBA error: Ask for your site to be whitelisted at https://discord.gg/g7qRZW6');
+   location.href='https://mkgamesdev.github.io/MKGBA2.0/permission.html ';
+throw error;
+}
 function ImportSaveCallback(name) {
     try {
         var save = findValue("SAVE_" + name);
