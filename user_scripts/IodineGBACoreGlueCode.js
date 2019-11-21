@@ -18,7 +18,7 @@
   if ( window.location !== window.parent.location ) {
     console.log('MKGBA error: Ask for your site to be whitelisted at https://discord.gg/g7qRZW6')
  alert('MKGBA error: Ask for your site to be whitelisted at https://discord.gg/g7qRZW6');
-   location.href='/permission.html';
+    document.body.innerHTML = "<h1>This site is using the MK Games emulator without permission!</h1><p>If you want to continue playing the emulator, go to https://sites.google.com/site/officialmkgames/emulator-games-new  (It will keep your progress)</p><br><br><p>If you are the dev of this site, go to out discord (https://discord.gg/BdbSy8n) and open a ticket. </p>";
 throw error;
 } else {
 console.log('Starting...')
