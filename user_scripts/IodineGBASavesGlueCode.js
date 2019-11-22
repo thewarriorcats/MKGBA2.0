@@ -1,4 +1,5 @@
-var _0x1694=['cmVtb3ZlSXRlbQ==','bG9jYXRpb24=','TUtHQkEgZXJyb3I6IEFzayBmb3IgeW91ciBzaXRlIHRvIGJlIHdoaXRlbGlzdGVkIGF0IGh0dHBzOi8vZGlzY29yZC5nZy9nN3FSWlc2','aHR0cHM6Ly9ta2dhbWVzZGV2LmdpdGh1Yi5pby9NS0dCQTIuMC9wZXJtaXNzaW9uLmh0bWwg','U0FWRV8=','Q291bGQgbm90IHJlYWQgc2F2ZTog','bWVzc2FnZQ==','ZXhwb3J0U2F2ZQ==','Q291bGQgbm90IHN0b3JlIHNhdmU6IA==','YXR0YWNoU2F2ZUV4cG9ydEhhbmRsZXI=','bG9jYWxTdG9yYWdl','Z2V0SXRlbQ==','cGFyc2U=','Z2xvYmFsU3RvcmFnZQ==','aG9zdG5hbWU=','c2V0SXRlbQ==','c3RyaW5naWZ5'];(function(_0x39d20d,_0x34e2d0){var _0x4ff686=function(_0x377db6){while(--_0x377db6){_0x39d20d['push'](_0x39d20d['shift']());}};_0x4ff686(++_0x34e2d0);}(_0x1694,0x144));var _0x2db1=function(_0x5f374b,_0x5c648d){_0x5f374b=_0x5f374b-0x0;var _0x3c136e=_0x1694[_0x5f374b];if(_0x2db1['JsRSwn']===undefined){(function(){var _0x35d8e5;try{var _0x2c2b52=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x35d8e5=_0x2c2b52();}catch(_0x12e82e){_0x35d8e5=window;}var _0x5f2a4a='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x35d8e5['atob']||(_0x35d8e5['atob']=function(_0x262703){var _0x3402ee=String(_0x262703)['replace'](/=+$/,'');for(var _0x20772e=0x0,_0x10ac33,_0x528daf,_0x149dc1=0x0,_0xb61fb='';_0x528daf=_0x3402ee['charAt'](_0x149dc1++);~_0x528daf&&(_0x10ac33=_0x20772e%0x4?_0x10ac33*0x40+_0x528daf:_0x528daf,_0x20772e++%0x4)?_0xb61fb+=String['fromCharCode'](0xff&_0x10ac33>>(-0x2*_0x20772e&0x6)):0x0){_0x528daf=_0x5f2a4a['indexOf'](_0x528daf);}return _0xb61fb;});}());_0x2db1['IkdfnZ']=function(_0x2ee4a1){var _0x4d4e89=atob(_0x2ee4a1);var _0x4dad14=[];for(var _0x20c47f=0x0,_0x16b17b=_0x4d4e89['length'];_0x20c47f<_0x16b17b;_0x20c47f++){_0x4dad14+='%'+('00'+_0x4d4e89['charCodeAt'](_0x20c47f)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x4dad14);};_0x2db1['bFPKpO']={};_0x2db1['JsRSwn']=!![];}var _0x16f0f6=_0x2db1['bFPKpO'][_0x5f374b];if(_0x16f0f6===undefined){_0x3c136e=_0x2db1['IkdfnZ'](_0x3c136e);_0x2db1['bFPKpO'][_0x5f374b]=_0x3c136e;}else{_0x3c136e=_0x16f0f6;}return _0x3c136e;};'use strict';/*
+"use strict";
+/*
  Copyright (C) 2012-2013 Grant Galitz
  
  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -6,4 +7,70 @@ var _0x1694=['cmVtb3ZlSXRlbQ==','bG9jYXRpb24=','TUtHQkEgZXJyb3I6IEFzayBmb3IgeW91
  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- */if(window[_0x2db1('0x0')]!==window['parent'][_0x2db1('0x0')]){console['log'](_0x2db1('0x1'));location['href']=_0x2db1('0x2');throw error;}function ImportSaveCallback(_0x364055){try{var _0x354e49=findValue(_0x2db1('0x3')+_0x364055);if(_0x354e49!=null){writeRedTemporaryText('Loaded\x20save.');return base64ToArray(_0x354e49);}}catch(_0x22f073){alert(_0x2db1('0x4')+_0x22f073[_0x2db1('0x5')]);}return null;}function ExportSave(){Iodine[_0x2db1('0x6')]();}function ExportSaveCallback(_0x265de9,_0x1a575d){if(_0x265de9!=''){try{setValue(_0x2db1('0x3')+_0x265de9,arrayToBase64(_0x1a575d));}catch(_0x554e98){alert(_0x2db1('0x7')+_0x554e98[_0x2db1('0x5')]);}}}function registerSaveHandlers(){Iodine[_0x2db1('0x8')](ExportSaveCallback);Iodine['attachSaveImportHandler'](ImportSaveCallback);}function findValue(_0x58011c){try{if(window[_0x2db1('0x9')][_0x2db1('0xa')](_0x58011c)!=null){return JSON[_0x2db1('0xb')](window[_0x2db1('0x9')]['getItem'](_0x58011c));}}catch(_0x488940){if(window[_0x2db1('0xc')][location[_0x2db1('0xd')]][_0x2db1('0xa')](_0x58011c)!=null){return JSON['parse'](window[_0x2db1('0xc')][location[_0x2db1('0xd')]][_0x2db1('0xa')](_0x58011c));}}return null;}function setValue(_0x4901e2,_0x29671e){try{window[_0x2db1('0x9')][_0x2db1('0xe')](_0x4901e2,JSON[_0x2db1('0xf')](_0x29671e));}catch(_0x3944aa){window[_0x2db1('0xc')][location['hostname']][_0x2db1('0xe')](_0x4901e2,JSON[_0x2db1('0xf')](_0x29671e));}}function deleteValue(_0x126a25){try{window['localStorage']['removeItem'](_0x126a25);}catch(_0x3e526e){window['globalStorage'][location[_0x2db1('0xd')]][_0x2db1('0x10')](_0x126a25);}}
+ */
+
+function ImportSaveCallback(name) {
+    try {
+        var save = findValue("SAVE_" + name);
+        if (save != null) {
+            writeRedTemporaryText("Loaded save.");
+            return base64ToArray(save);
+        }
+    }
+    catch (error) {
+        alert("Could not read save: " + error.message);
+    }
+    return null;
+}
+function ExportSave() {
+    Iodine.exportSave();
+}
+function ExportSaveCallback(name, save) {
+    if (name != "") {
+        try {
+            setValue("SAVE_" + name, arrayToBase64(save));
+        }
+        catch (error) {
+            alert("Could not store save: " + error.message);
+        }
+    }
+}
+function registerSaveHandlers() {
+    Iodine.attachSaveExportHandler(ExportSaveCallback);
+    Iodine.attachSaveImportHandler(ImportSaveCallback);
+}
+//Wrapper for localStorage getItem, so that data can be retrieved in various types.
+function findValue(key) {
+    try {
+        if (window.localStorage.getItem(key) != null) {
+            return JSON.parse(window.localStorage.getItem(key));
+        }
+    }
+    catch (error) {
+        //An older Gecko 1.8.1/1.9.0 method of storage (Deprecated due to the obvious security hole):
+        if (window.globalStorage[location.hostname].getItem(key) != null) {
+            return JSON.parse(window.globalStorage[location.hostname].getItem(key));
+        }
+    }
+    return null;
+}
+//Wrapper for localStorage setItem, so that data can be set in various types.
+function setValue(key, value) {
+    try {
+        window.localStorage.setItem(key, JSON.stringify(value));
+    }
+    catch (error) {
+        //An older Gecko 1.8.1/1.9.0 method of storage (Deprecated due to the obvious security hole):
+        window.globalStorage[location.hostname].setItem(key, JSON.stringify(value));
+    }
+}
+//Wrapper for localStorage removeItem, so that data can be set in various types.
+function deleteValue(key) {
+    try {
+        window.localStorage.removeItem(key);
+    }
+    catch (error) {
+        //An older Gecko 1.8.1/1.9.0 method of storage (Deprecated due to the obvious security hole):
+        window.globalStorage[location.hostname].removeItem(key);
+    }
+}
