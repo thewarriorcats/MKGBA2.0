@@ -15,14 +15,7 @@
  * GNU General Public License for more details.
  *
  */
-  if ( window.location !== window.parent.location ) {
-    console.log('MKGBA error: Ask for your site to be whitelisted at https://discord.gg/g7qRZW6')
- //alert('MKGBA error: Ask for your site to be whitelisted at https://discord.gg/g7qRZW6');
-   location.href='https://mkgamesdev.github.io/MKGBA2.0/permission.html ';
-throw error;
-} else {
-console.log('Starting...')
-}
+
 var games = {
     "advancewars":"Advance Wars",
     "advancewars2":"Advance Wars 2",
