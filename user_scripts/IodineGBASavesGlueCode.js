@@ -25,6 +25,58 @@ function ImportSaveCallback(name) {
 function ExportSave() {
     Iodine.exportSave();
 }
+
+//mk's save export test
+function import_save(blobData) {
+    blobData = decodeBlob(blobData);
+    if (blobData && blobData.blobs) {
+        if (blobData.blobs.length > 0) {
+            for (var index = 0; index < blobData.blobs.length; ++index) {
+                var blobID = blobData.blobs[index].blobID;
+                var blobContent = blobData.blobs[index].blobContent;
+                writeRedTemporaryText("Importing blob \"" + blobID + "\"");
+                if (blobContent) {
+                    setValue(blobID, blobContent);
+                }
+                else if (blobID) {
+                    writeRedTemporaryText("Save file imported had blob \"" + blobID + "\" with no blob data interpretable.");
+                }
+                else {
+                    writeRedTemporaryText("Blob chunk information missing completely.");
+                }
+            }
+        }
+        else {
+            writeRedTemporaryText("Could not decode the imported file.");
+        }
+    }
+    else {
+        writeRedTemporaryText("Could not decode the imported file.");
+    }
+
+ 
+ 
+ function generateBlob(keyName, encodedData) {
+    //Append the file format prefix:
+    var saveString = "EMULATOR_DATA";
+    var consoleID = "GameBoyAdvance";
+    //Figure out the length:
+    var totalLength = (saveString.length + 4 + (1 + consoleID.length)) + ((1 + keyName.length) + (4 + encodedData.length));
+    //Append the total length in bytes:
+    saveString += to_little_endian_word(totalLength);
+    //Append the console ID text's length:
+    saveString += to_byte(consoleID.length);
+    //Append the console ID text:
+    saveString += consoleID;
+    //Append the blob ID:
+    saveString += to_byte(keyName.length);
+    saveString += keyName;
+    //Now append the save data:
+    saveString += to_little_endian_word(encodedData.length);
+    saveString += encodedData;
+    return saveString;
+}
+ 
 function ExportSaveCallback(name, save) {
     if (name != "") {
         try {
