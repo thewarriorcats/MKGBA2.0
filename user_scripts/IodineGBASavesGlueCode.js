@@ -54,7 +54,7 @@ function import_save(blobData) {
         writeRedTemporaryText("Could not decode the imported file.");
     }
 
- 
+}
  
  function generateBlob(keyName, encodedData) {
     //Append the file format prefix:
